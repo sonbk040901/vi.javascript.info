@@ -29,11 +29,9 @@ let array = [ john ];
 
 john = null; // overwrite the reference
 
-*!*
 // the object previously referenced by john is stored inside the array
 // therefore it won't be garbage-collected
 // we can get it as array[0]
-*/!*
 ```
 
 Similar to that, if we use an object as the key in a regular `Map`, then while the `Map` exists, that object exists as well. It occupies memory and may not be garbage collected.
